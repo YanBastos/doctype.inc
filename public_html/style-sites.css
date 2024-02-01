@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* NAVBAR */
+
+#navbar {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.navbar-items ul,
+a {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+}
+
+
+#navbar .toggle_btn {
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+/* DROP_MENU */
+
+.drop_menu {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 115px;
+    height: 0;
+    width: 300px;
+    background: #22262fa2;
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.drop_menu.open {
+    height: auto;
+}
+
+.drop_menu li {
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.drop_menu .action_button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#project {
+    width: 100%;
+}
+
+.cards-container {
+    /* width: 100%; correção responsividade   */
+    display: flex;
+    flex-wrap: wrap;
+    margin:auto 50px ;
+}
+
+.card {
+    border: solid #000 1px;
+    margin: 10px;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: 1s;
+}
+
+.card:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2, 1.2);
+    -ms-transform: scale(1.2, 1.2);
+    /* IE 9 */
+    -webkit-transform: scale(1.2, 1.2);
+    /* Safari and Chrome */
+
+    background-color: #ff9100;
+    color: #fff;
+}
+
+.card img {
+    width: 100%;
+    max-width: 600px;
+}
+
+
